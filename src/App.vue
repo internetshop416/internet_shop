@@ -61,6 +61,38 @@ export default {
 </script>
 
 <style>
+  body {
+    background-image: url("../public/images/background.jpg");
+    background-repeat: repeat-y;
+  }
+
+  * {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 1fr;
+	font-family: "Raleway", sans-serif;
+	background-color: #01e37f;
+}
+
+h3 {
+	font-size: 0.7em;
+	letter-spacing: 1.2px;
+	color: #a6a6a6;
+}
+
+img {
+			max-width: 100%;
+			filter: drop-shadow(1px 1px 3px #a6a6a6);
+		}
+
   header {
     margin: 50px;
     text-align: center;

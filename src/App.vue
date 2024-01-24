@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <header>
-      <h1 class="fw-bold ms-2">Бобинки-пушинки</h1>
+      <h1 class="fw-bold ms-2">{{ database.title.title }}</h1>
+      <p>{{ database.title.description }}</p>
     </header>
     <!-- <price-slider :maximal.sync="maximal"></price-slider> -->
     <!-- <product-list :products="products" :maximal="maximal"></product-list> -->
@@ -14,21 +15,9 @@
         <br>
         <table>
           <tbody>
-            <tr>
-              <td>Телефон:</td>
-              <td><a href="tel:79031234567">+7 (903) 123-4567</a></td>
-            </tr>
-            <tr>
-              <td>Электронная почта:</td>
-              <td><a href="mailto:internetshop416@gmail.com">internetshop416@gmail.com</a></td>
-            </tr>
-            <tr>
-              <td>WhatsApp:</td>
-              <td><a href="tel:79031234567">+7 (903) 123-4567</a></td>
-            </tr>
-            <tr>
-              <td>Telegram:</td>
-              <td><a href="telegram:internetshop416">@internetshop416</a></td>
+            <tr  v-for="(item, index) in database.contacts" :key="index">
+              <td>{{item.title}}:&nbsp;</td>
+              <td><a :href="item.href">{{ item.value }}</a></td>
             </tr>
           </tbody>
         </table>
@@ -100,6 +89,9 @@ img {
 
   footer {
     margin: 50px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3em;
   }
 
   .contacts-header {
@@ -109,5 +101,20 @@ img {
   .contacts {
     width: 400px;
     margin: auto;
+  }
+
+  header {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+  }
+
+  header h1 {
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #342900, #860101);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 </style>

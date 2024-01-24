@@ -1,4 +1,30 @@
 {
+    "title": {
+        "title": "Бобинки-пушинки",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis rutrum lacus ut aliquet. Nulla molestie dictum vehicula. Nunc ut mi consectetur, tempor turpis eget, fermentum erat."
+    },
+    "contacts": [
+        {
+            "title": "Электронная почта",
+            "href": "mailto:internetshop416@gmail.com",
+            "value": "internetshop416@gmail.com"
+        },
+        {
+            "title": "Телефон",
+            "href": "tel:79031234567",
+            "value": "+7 (903) 123-4567"
+        },
+        {
+            "title": "Telegram",
+            "href": "https://t.me/+79031234567",
+            "value": "@internetshop416"
+        },
+        {
+            "title": "WhatsApp",
+            "href": "https://api.whatsapp.com/send?phone=79031234567",
+            "value": "+7 (903) 123-4567"
+        }
+    ],
     "products": [
         {
             "id": 1,

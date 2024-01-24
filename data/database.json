@@ -1,0 +1,64 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Сariaggi jaipur",
+            "color": "корица",
+            "price": 1300,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Сariaggi jaipur: 2222",
+            "color": "корица",
+            "price": 3933,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "1.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Сariaggi jaipur: 3333",
+            "color": "корица",
+            "price": 1238,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "1.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Сariaggi jaipur: 4444",
+            "color": "корица",
+            "price": 800,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "1.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Сariaggi jaipur: 5555",
+            "color": "корица",
+            "price": 2500,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "1.jpg"
+        }
+    ]
+}

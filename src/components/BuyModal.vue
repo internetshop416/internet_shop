@@ -79,11 +79,12 @@
 </template>
 
 <script>
+import emailjs from '@emailjs/browser';
 
 export default {
     name: 'BuyModal',
     props: ['product'],
-    data: function() {
+    data: function () {
         return {
             quantity: 1,
             contactInfo: '',
@@ -98,7 +99,22 @@ export default {
         },
 
         buy() {
-            // console.log(this.product, this.quantity, this.contactInfo, this.address, this.comment);
+            let templateParams = {
+                name: this.product.name,
+                id: this.product.id,
+                quantity: this.quantity,
+                contacts: this.contactInfo,
+                address: this.address,
+                comment: this.comment
+            };
+            emailjs.init('29IJ0jY4u-_sIZ-Nb');
+            emailjs.send('service_mp2brdj', 'template_vhyvgkb', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function (err) {
+                    console.log('FAILED...', err);
+                });
+
             this.readyToClose = true;
         }
     },

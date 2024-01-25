@@ -34,7 +34,7 @@ export default {
 .type-selector {
   background-color: white;
   color: black;
-  width: 1290px;
+  max-width: 1290px;
   margin: 0 auto;
   border-radius: 5px;
 }

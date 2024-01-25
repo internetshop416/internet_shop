@@ -2,5 +2,5 @@ const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
-  publicPath: '/internet_shop/'
+  publicPath: process.env.NODE_ENV === 'development' ? '' : '/internet_shop/'
 });

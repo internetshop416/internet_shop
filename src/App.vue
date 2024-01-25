@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header>
+    <header class="app-header">
       <h1 class="fw-bold ms-2">{{ database.title.title }}</h1>
       <p>{{ database.title.description }}</p>
     </header>
@@ -24,13 +24,14 @@ export default {
       maximal: 0,
       products: [],
       database: json,
-      showModal: false
     };
   },
   components: {
     ProductList,
     PriceSlider,
     Contacts,
+  },
+  methods: {
   },
   mounted: function () {
   },
@@ -70,18 +71,18 @@ img {
   filter: drop-shadow(1px 1px 3px #a6a6a6);
 }
 
-header {
+.app-header {
   margin: 50px;
   text-align: center;
 }
 
-header {
+.app-header {
   background-color: white;
   border-radius: 5px;
   padding: 1em;
 }
 
-header h1 {
+.app-header h1 {
   font-size: 70px;
   font-weight: 600;
   background-image: linear-gradient(to left, #342900, #860101);

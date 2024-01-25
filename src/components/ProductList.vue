@@ -27,16 +27,39 @@
             <li>{{ item.description }}</li>
           </ul>
         </div>
-        <button class="buy--btn">Купить</button>
+        <button class="buy--btn" @click="showModal(item)">Купить</button>
       </div>
     </section>
+    <BuyModal v-show="isModalVisible" @close="closeModal" :product="currentProduct">
+    </BuyModal>
   </div>
+
 </template>
 
 <script>
+import BuyModal from './BuyModal.vue';
+
 export default {
   name: "product-list",
   props: ["products", "maximal"],
+  components: {
+    BuyModal,
+  },
+  data: function() {
+    return {
+      isModalVisible: false,
+      currentProduct: {},
+    };
+  },  
+  methods: {
+    showModal(item) {
+      this.currentProduct = item;
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    }
+  },
   computed: {
     filteredItems: function () {
       const max_price = this.maximal;

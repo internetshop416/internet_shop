@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="contacts-footer">
     <div class="contacts">
       <p class="contacts-header">Наши контакты:</p>
       <br>
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style>
-footer {
+.contacts-footer {
   margin: 50px;
   background-color: white;
   border-radius: 5px;

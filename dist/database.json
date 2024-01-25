@@ -1,0 +1,91 @@
+{
+    "title": {
+        "title": "Бобинки-пушинки",
+        "page_title": "Бобинки-пушинки: интернет магазин",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis rutrum lacus ut aliquet. Nulla molestie dictum vehicula. Nunc ut mi consectetur, tempor turpis eget, fermentum erat."
+    },
+    "contacts": [
+        {
+            "title": "Электронная почта",
+            "href": "mailto:internetshop416@gmail.com",
+            "value": "internetshop416@gmail.com"
+        },
+        {
+            "title": "Телефон",
+            "href": "tel:79031234567",
+            "value": "+7 (903) 123-4567"
+        },
+        {
+            "title": "Telegram",
+            "href": "https://t.me/+79031234567",
+            "value": "@internetshop416"
+        },
+        {
+            "title": "WhatsApp",
+            "href": "https://api.whatsapp.com/send?phone=79031234567",
+            "value": "+7 (903) 123-4567"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Сariaggi jaipur",
+            "color": "корица",
+            "price": 1300,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Сariaggi jaipur: 2222",
+            "color": "корица",
+            "price": 3933,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/1.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Сariaggi jaipur: 3333",
+            "color": "корица",
+            "price": 1238,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis rutrum lacus ut aliquet. Nulla molestie dictum vehicula. Nunc ut mi consectetur, tempor turpis eget, fermentum erat. Phasellus eu commodo massa, in auctor tellus. Aenean lorem lorem, rutrum vitae neque sit amet, gravida tincidunt enim. In posuere sapien eget metus elementum tristique. Duis commodo felis sit amet imperdiet tristique. Nulla eros leo, faucibus et diam ut, consectetur rutrum quam. Donec et eros eu leo tempus suscipit. Vestibulum ac dignissim arcu, in molestie ante. Mauris nunc odio, finibus quis enim quis, tincidunt fringilla sem. Proin commodo, lorem at scelerisque feugiat, ex elit volutpat ligula, eu dictum nisl enim sed ex. Suspendisse nec enim eget velit hendrerit elementum. Suspendisse potenti. Mauris id mi tincidunt felis lobortis elementum id sed nisi.            ",
+            "image": "images/1.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Сariaggi jaipur: 4444",
+            "color": "корица",
+            "price": 800,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/1.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Сariaggi jaipur: 5555",
+            "color": "корица",
+            "price": 2500,
+            "weight_for_price": 100,
+            "available": 496,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/1.jpg"
+        }
+    ]
+}

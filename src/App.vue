@@ -15,7 +15,7 @@ import PriceSlider from "./components/PriceSlider.vue";
 import ProductList from "./components/ProductList.vue";
 import Contacts from "./components/Contacts.vue";
 
-import json from '../data/database.json'
+import json from '../data/database_empty.json'
 
 export default {
   name: "App",
@@ -23,7 +23,7 @@ export default {
     return {
       maximal: 0,
       products: [],
-      database: json,
+      database: json
     };
   },
   components: {
@@ -37,6 +37,9 @@ export default {
   },
   created() {
     document.title = this.database.title.page_title;
+    fetch('/database.json')
+      .then(response => response.json())
+      .then((data) => this.database = data);
   }
 };
 </script>

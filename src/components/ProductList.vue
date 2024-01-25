@@ -1,7 +1,6 @@
 <template>
   <div id="productList" class="container">
-
-    <section class="product" v-for="(item, index) in filteredItems" :key="index">
+    <section class="product" v-for="(item, index) in filteredProducts" :key="index">
       <div class="product__photo">
         <div class="photo-container">
           <div class="photo-main">
@@ -41,7 +40,7 @@ import BuyModal from './BuyModal.vue';
 
 export default {
   name: "product-list",
-  props: ["products", "maximal"],
+  props: ["products", "maximal", "currentType"],
   components: {
     BuyModal,
   },
@@ -49,8 +48,24 @@ export default {
     return {
       isModalVisible: false,
       currentProduct: {},
+      filteredProducts: []
     };
   },  
+  watch: {
+    currentType(newVal, oldVal) {
+      if (newVal === 0) {
+        this.filteredProducts = this.products;
+      }
+      else {
+        this.filteredProducts = this.products.filter(function(item) {
+          return item.type_id === newVal;
+        });
+      }
+    },
+    products(newVal, oldVal) {
+      this.filteredProducts = this.products;
+    }
+  },
   methods: {
     showModal(item) {
       this.currentProduct = item;
@@ -59,14 +74,6 @@ export default {
     closeModal() {
       this.isModalVisible = false;
     }
-  },
-  computed: {
-    filteredItems: function () {
-      const max_price = this.maximal;
-      return this.products.filter(function (item) {
-        return max_price <= 0 || item.price <= max_price;
-      });
-    },
   },
 };
 </script>

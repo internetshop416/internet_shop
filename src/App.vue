@@ -5,13 +5,14 @@
       <p>{{ database.title.description }}</p>
     </header>
 
-    <product-list :products="database.products" :maximal="maximal"></product-list>
+    <type-selector :types="database.types" @typeChanged="onTypeChanged"></type-selector>
+    <product-list :products="database.products" :maximal="maximal" :currentType="currentType"></product-list>
     <contacts :contacts="database.contacts"></contacts>
   </div>
 </template>
 
 <script>
-import PriceSlider from "./components/PriceSlider.vue";
+import TypeSelector from "./components/TypeSelector.vue";
 import ProductList from "./components/ProductList.vue";
 import Contacts from "./components/Contacts.vue";
 
@@ -23,21 +24,25 @@ export default {
     return {
       maximal: 0,
       products: [],
-      database: json
+      database: json,
+      currentType: 0
     };
   },
   components: {
     ProductList,
-    PriceSlider,
+    TypeSelector,
     Contacts,
   },
   methods: {
+    onTypeChanged: function(id) {
+      this.currentType = id;
+    }
   },
   mounted: function () {
   },
   created() {
     document.title = this.database.title.page_title;
-    fetch('/internet_shop/database.json')
+    fetch(process.env.NODE_ENV === 'development' ? '/database.json' : '/internet_shop/database.json')
       .then(response => response.json())
       .then((data) => this.database = data);
   }

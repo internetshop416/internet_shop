@@ -37,7 +37,7 @@ export default {
   },
   created() {
     document.title = this.database.title.page_title;
-    fetch('/database.json')
+    fetch('/internet_shop/database.json')
       .then(response => response.json())
       .then((data) => this.database = data);
   }

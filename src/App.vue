@@ -35,13 +35,16 @@ export default {
   },
   mounted: function () {
   },
+  created() {
+    document.title = this.database.title.page_title;
+  }
 };
 </script>
 
 <style>
 body {
-  background-image: url("../public/images/background.jpg");
-  background-repeat: repeat-y;
+  background-image: url("../public/images/bg.jpg");
+  background-repeat: repeat-y repeat-x;
 }
 
 * {

@@ -51,7 +51,7 @@
     "products": [
         {
             "id": 1,
-            "type_id": 1,
+            "type_id": 2,
             "name": "Сariaggi jaipur",
             "color": "корица",
             "price": 1300,
@@ -64,7 +64,7 @@
         },
         {
             "id": 2,
-            "type_id": 2,
+            "type_id": 1,
             "name": "Сariaggi jaipur: 2222",
             "color": "корица",
             "price": 3933,

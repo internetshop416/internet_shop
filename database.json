@@ -113,6 +113,19 @@
             "length": "2800 м в 100 г. (2/56)",
             "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
             "image": "images/1.jpg"
-        }
+        },
+      {
+            "id": 6,
+            "type_id": 2,
+            "name": "Сariaggi jaipur: 50",
+            "color": "вишня",
+            "price": 1800,
+            "weight_for_price": 100,
+            "available": 500,
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/1.jpg"
+        }  
     ]
 }

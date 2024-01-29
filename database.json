@@ -61,23 +61,23 @@
             "price": 390,
             "weight_for_price": 100,
             "available": 900,
-            "ingredients": "100 % мериос",
+            "ingredients": "100 % меринос",
             "length": "4000 м в 100 г. (2/80)",
             "description": "Готовое полотно шелковистое, мягкое, с благородным блеском, резинки держит отлично.",
             "image": "images/1698214047352.png"
         },
         {
-            "id": 2,
-            "type_id": 1,
-            "name": "Сariaggi jaipur: 2222",
-            "color": "корица",
-            "price": 3933,
+            "id": 1,
+            "type_id": 2,
+            "name": "Zegna Baruffa арт. Re-Active",
+            "color": "виноградный",
+            "price": 390,
             "weight_for_price": 100,
-            "available": 496,
-            "ingredients": "70 гребенной кашемир + 30 шелк.",
-            "length": "2800 м в 100 г. (2/56)",
+            "available": 1000,
+            "ingredients": "100 % меринос",
+            "length": "4000 м в 100 г. (2/80)",
             "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
-            "image": "images/1.jpg"
+            "image": "images/Виноградный РЕ-Актив.png"
         },
         {
             "id": 3,

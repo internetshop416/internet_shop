@@ -55,7 +55,7 @@
     "products": [
         {
             "id": 1,
-            "type_id": 01,
+            "type_id": "01",
             "name": "Zegna Baruffa арт. Re-Active",
             "color": "синий",
             "price": 390,

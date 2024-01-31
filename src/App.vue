@@ -51,7 +51,7 @@ export default {
 
 <style>
 body {
-  background-image: url("../public/images/bg.jpg");
+  background-image: url("../public/images/test_bg.jpg");
   background-repeat: repeat-y repeat-x;
 }
 
@@ -68,7 +68,7 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   font-family: "Raleway", sans-serif;
-  background-color: #01e37f;
+  background-color: #eee;
 }
 
 h3 {

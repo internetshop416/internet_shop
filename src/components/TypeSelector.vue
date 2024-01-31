@@ -8,6 +8,9 @@
         </li>
       </ul>
     </section>
+    <section v-if="typeDescription" class="type-description">
+      <p>{{ typeDescription }}</p>
+    </section>
   </div>
 </template>
   
@@ -27,6 +30,13 @@ export default {
       currentIndex: 0
     };
   },
+
+  computed: {
+    typeDescription() {
+      const selectedType = this.types.find(t => t.id == this.currentIndex);
+      return selectedType?.description ?? '';
+    }
+  }
 };
 </script>
 
@@ -37,6 +47,16 @@ export default {
   max-width: 1290px;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+.type-description {
+  background-color: white;
+  color: black;
+  max-width: 1290px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
 /* Style the list */

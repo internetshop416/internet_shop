@@ -22,7 +22,7 @@
             <li>Цвет: {{ item.color }}</li>
             <li>Состав: {{ item.ingredients }}</li>
             <li>Нить: {{ item.length }}</li>
-            <li>В наличии: {{ item.available }} грамм</li>
+            <li>В наличии: {{ item.available }}</li>
             <li>{{ item.description }}</li>
           </ul>
         </div>

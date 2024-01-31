@@ -1,7 +1,7 @@
 {
     "title": {
-        "title": "Бобинки-пушинки",
-        "page_title": "Бобинки-пушинки: интернет магазин",
+        "title": "Дом Бобины",
+        "page_title": "Дом Бобины: интернет магазин",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis rutrum lacus ut aliquet. Nulla molestie dictum vehicula. Nunc ut mi consectetur, tempor turpis eget, fermentum erat."
     },
     "contacts": [
@@ -29,77 +29,87 @@
     "types": [
         {
             "id": 0,
-            "name": "Все"
+            "name": "Все",
+            "description": ""
         },
         {
             "id": 1,
-            "name": "Меринос"
+            "name": "Меринос",
+            "description": "Мерино́с[1] (исп. los merinos мн. ч., merino ед.ч.) — порода тонкорунных овец, наибольшее поголовье которых находится в Австралии. Мериносы отличаются от остальных пород овец высоким качеством камвольной (чёсаной) шерсти, состоящей из тонких (15–25 мкм) мягких волокон."
         },
         {
             "id": 2,
-            "name": "Кашемир с шелком"
+            "name": "Кашемир с шелком",
+            "description": "Кашеми́р (от фр. сасһеmirе[1], нем. Kaschmir, англ. cashmere), также кашми́р[1], камиши́р[1] — очень тонкая, мягкая и тёплая материя саржевого переплетения. Шёлк — мягкая ткань из нитей, добываемых из кокона тутового шелкопряда. Изначально шёлк происходил из Китая и был важным товаром, который доставлялся в Европу по Шёлковому пути. Толщина волокна — 20—30 микрометров. Длина шёлковой нити (шелковины[1]) из одного кокона достигает 400—1450 метров. Нить имеет треугольное сечение и, подобно призме, преломляет свет, что вызывает красивое переливание и блеск."
         },
         {
             "id": 3,
-            "name": "Хлопок"
+            "name": "Хлопок",
+            "description": "Хло́пок — волокно растительного происхождения, покрывающее семена хлопчатника; важнейшее и наиболее дешёвое из распространённых растительных волокон[1]."
         },
         {
             "id": 4,
-            "name": "Шелк"
+            "name": "Шелк",
+            "description": "Шёлк — мягкая ткань из нитей, добываемых из кокона тутового шелкопряда. Изначально шёлк происходил из Китая и был важным товаром, который доставлялся в Европу по Шёлковому пути. Толщина волокна — 20—30 микрометров. Длина шёлковой нити (шелковины[1]) из одного кокона достигает 400—1450 метров. Нить имеет треугольное сечение и, подобно призме, преломляет свет, что вызывает красивое переливание и блеск."
+        },
+        {
+            "id": 5,
+            "name": "Смесовка",
+            "description": ""
         }
     ],
     "products": [
         {
             "id": 1,
-            "type_id": 2,
-            "name": "Сariaggi jaipur",
-            "color": "корица",
-            "price": 1300,
-            "weight_for_price": 100,
-            "available": 496,
-            "ingredients": "70 гребенной кашемир + 30 шелк.",
-            "length": "2800 м в 100 г. (2/56)",
-            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
-            "image": "images/1.jpg"
-        },
-        {
-            "id": 2,
             "type_id": 1,
-            "name": "Сariaggi jaipur: 2222",
-            "color": "корица",
-            "price": 3933,
+            "name": "Zegna Baruffa арт. Re-Active",
+            "color": "синий",
+            "price": 390,
             "weight_for_price": 100,
-            "available": 496,
-            "ingredients": "70 гребенной кашемир + 30 шелк.",
-            "length": "2800 м в 100 г. (2/56)",
-            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
-            "image": "images/1.jpg"
+            "available": "900 грамм",
+            "ingredients": "100 % меринос",
+            "length": "4000 м в 100 г. (2/80)",
+            "description": "Готовое полотно шелковистое, мягкое, с благородным блеском, резинки держит отлично.",
+            "image": "images/1698214047352.png"
         },
         {
-            "id": 3,
+            "id": 1,
             "type_id": 2,
-            "name": "Сariaggi jaipur: 3333",
-            "color": "корица",
-            "price": 1238,
+            "name": "Zegna Baruffa арт. Re-Active",
+            "color": "виноградный",
+            "price": 390,
             "weight_for_price": 100,
-            "available": 496,
-            "ingredients": "70 гребенной кашемир + 30 шелк.",
-            "length": "2800 м в 100 г. (2/56)",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis rutrum lacus ut aliquet. Nulla molestie dictum vehicula. Nunc ut mi consectetur, tempor turpis eget, fermentum erat. Phasellus eu commodo massa, in auctor tellus. Aenean lorem lorem, rutrum vitae neque sit amet, gravida tincidunt enim. In posuere sapien eget metus elementum tristique. Duis commodo felis sit amet imperdiet tristique. Nulla eros leo, faucibus et diam ut, consectetur rutrum quam. Donec et eros eu leo tempus suscipit. Vestibulum ac dignissim arcu, in molestie ante. Mauris nunc odio, finibus quis enim quis, tincidunt fringilla sem. Proin commodo, lorem at scelerisque feugiat, ex elit volutpat ligula, eu dictum nisl enim sed ex. Suspendisse nec enim eget velit hendrerit elementum. Suspendisse potenti. Mauris id mi tincidunt felis lobortis elementum id sed nisi.            ",
-            "image": "images/1.jpg"
+            "available": "1000 грамм",
+            "ingredients": "100 % меринос",
+            "length": "4000 м в 100 г. (2/80)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/Виноградный РЕ-Актив.png"
         },
         {
-            "id": 4,
+            "id": 1,
             "type_id": 3,
-            "name": "Сariaggi jaipur: 4444",
-            "color": "корица",
-            "price": 800,
+            "name": "Zegna Baruffa арт. Millennium",
+            "color": "белоснежный",
+            "price": 390,
             "weight_for_price": 100,
-            "available": 496,
-            "ingredients": "70 гребенной кашемир + 30 шелк.",
-            "length": "2800 м в 100 г. (2/56)",
+            "available": "1500 грамм",
+            "ingredients": "100 % меринос",
+            "length": "3000 м в 100 г. (2/60)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском",
+            "image": "images/23.png.png"
+        },
+        {
+            "id": 1,
+            "type_id": 4,
+            "name": "Zegna Baruffa арт. Millennium",
+            "color": "королевский синий",
+            "price": 390,
+            "weight_for_price": 100,
+            "available": "1500 грамм",
+            "ingredients": "100 % меринос",
+            "length": "3000 м в 100 г. (2/60)",
             "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
-            "image": "images/1.jpg"
+            "image": "images/Королевский синий Миллениум.png"
         },
         {
             "id": 5,
@@ -108,11 +118,37 @@
             "color": "корица",
             "price": 2500,
             "weight_for_price": 100,
-            "available": 496,
+            "available": "496 грамм",
             "ingredients": "70 гребенной кашемир + 30 шелк.",
             "length": "2800 м в 100 г. (2/56)",
             "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
             "image": "images/1.jpg"
-        }
+        },
+      {
+            "id": 6,
+            "type_id": 2,
+            "name": "Сariaggi jaipur: 50",
+            "color": "вишня",
+            "price": 1800,
+            "weight_for_price": 100,
+            "available": "500 грамм",
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/3-1.jpg"
+        },
+        {
+            "id": 7,
+            "type_id": 5,
+            "name": "Сariaggi jaipur: 60",
+            "color": "лимон",
+            "price": 2000,
+            "weight_for_price": 100,
+            "available": "200 грамм",
+            "ingredients": "70 гребенной кашемир + 30 шелк.",
+            "length": "2800 м в 100 г. (2/56)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/2.png"
+        }  
     ]
 }

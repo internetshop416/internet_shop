@@ -113,16 +113,16 @@
         },
         {
             "id": 5,
-            "type_id": 4,
-            "name": "Сariaggi jaipur: 5555",
-            "color": "корица",
-            "price": 2500,
+            "type_id": 1,
+            "name": "Zegna Baruffa арт. Millennium",
+            "color": "алый",
+            "price": 390,
             "weight_for_price": 100,
-            "available": "496 грамм",
-            "ingredients": "70 гребенной кашемир + 30 шелк.",
-            "length": "2800 м в 100 г. (2/56)",
+            "available": "900 грамм",
+            "ingredients": "100 % меринос",
+            "length": "3000 м в 100 г. (2/60)",
             "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
-            "image": "images/1.jpg"
+            "image": "images/Красный Миллениум.png"
         },
       {
             "id": 6,

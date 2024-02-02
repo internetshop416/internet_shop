@@ -150,6 +150,32 @@
             "length": "3000 м в 100 г. (2/60)",
             "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
             "image": "images/Черный Миллениум.png"
-        }  
+        } ,
+        {
+            "id": 8,
+            "type_id": 1,
+            "name": "Zegna Baruffa арт. Cashmore",
+            "color": "черный",
+            "price": 390,
+            "weight_for_price": 100,
+            "available": "546, 400 грамм",
+            "ingredients": "100 % меринос",
+            "length": "4000 м в 100 г. (2/80)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/1706902100244.png"
+        } ,
+        {
+            "id": 7,
+            "type_id": 1,
+            "name": "Zegna Baruffa арт. Millennium",
+            "color": "черный",
+            "price": 390,
+            "weight_for_price": 100,
+            "available": "1133 грамм",
+            "ingredients": "100 % меринос",
+            "length": "3000 м в 100 г. (2/60)",
+            "description": "Готовое полотно мягкое, струящееся, с шелковым блеском.",
+            "image": "images/Черный Миллениум.png"
+        } ,
     ]
 }

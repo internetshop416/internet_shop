@@ -320,6 +320,19 @@
             "length": "0 м в 100 г.",
             "description": "Здесь скоро появится новая пряжа )) ",
             "image": "images/бобинка одна картинка.png"
+             },
+        {
+            "id": 1,
+            "type_id": 4,
+            "name": "Шелк 100%",
+            "color": "-",
+            "price": "-",
+            "weight_for_price": 100,
+            "available": "0 грамм",
+            "ingredients": "100 шелк",
+            "length": "0 м в 100 г.",
+            "description": "Здесь скоро появится новая пряжа )) ",
+            "image": "images/бобинка одна картинка.png"
              }
    ]
 }

@@ -19,6 +19,7 @@ export default {
   data: () => ({
     sections: [
       { type: "shop", title: "Магазин" },
+      { type: "gallery", title: "Галерея работ" },
       { type: "contacts", title: "Контакты" },
       { type: "delivery", title: "Условия доставки" },
     ],

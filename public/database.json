@@ -3,7 +3,7 @@
     "title": {
         "title": "Дом Бобины",
         "page_title": "Дом Бобины: интернет магазин",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis rutrum lacus ut aliquet. Nulla molestie dictum vehicula. Nunc ut mi consectetur, tempor turpis eget, fermentum erat."
+        "description": "Итальянская пряжа высокого качества"
     },
     "contacts": [
         {
@@ -25,6 +25,12 @@
             "title": "WhatsApp",
             "href": "https://api.whatsapp.com/send?phone=79153451501",
             "value": "+7(915) 345-1501"
+        }
+    ],
+    "gallery": [
+        {
+            "image": "gallery/1.jpg",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et purus laoreet, luctus dolor nec, malesuada sem. Morbi sit amet purus imperdiet, semper augue at, rhoncus felis. Nulla auctor arcu quis ipsum accumsan tincidunt. Nam eleifend sem vehicula dolor vestibulum fringilla. Phasellus ullamcorper dui lectus, sodales pretium enim maximus vitae. Etiam imperdiet nulla id orci tempus gravida. Nam vitae mauris laoreet, vulputate sem gravida, ultricies tortor.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et purus laoreet, luctus dolor nec, malesuada sem. Morbi sit amet purus imperdiet, semper augue at, rhoncus felis. Nulla auctor arcu quis ipsum accumsan tincidunt. Nam eleifend sem vehicula dolor vestibulum fringilla. Phasellus ullamcorper dui lectus, sodales pretium enim maximus vitae. Etiam imperdiet nulla id orci tempus gravida. Nam vitae mauris laoreet, vulputate sem gravida, ultricies tortor."
         }
     ],
     "types": [

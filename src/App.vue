@@ -2,7 +2,7 @@
   <div id="app">
     <header class="app-header">
       <h1 class="fw-bold ms-2">{{ database.title.title }}</h1>
-      <p>{{ database.title.description }}</p>
+      <h4>{{ database.title.description }}</h4>
     </header>
 
     <section-selector @sectionChangedEvent="onSectionChanged"></section-selector>
@@ -10,6 +10,10 @@
     <section v-show="currentSection === 'shop'">
       <type-selector :types="database.types" @typeChanged="onTypeChanged"></type-selector>
       <product-list :products="database.products" :maximal="maximal" :currentType="currentType"></product-list>
+      <contacts :contacts="database.contacts" :show-header="true"></contacts>
+    </section>
+    <section v-show="currentSection === 'gallery'">
+      <gallery :items="database.gallery"></gallery>
       <contacts :contacts="database.contacts" :show-header="true"></contacts>
     </section>
     <section v-show="currentSection === 'contacts'">
@@ -25,6 +29,7 @@
 import TypeSelector from "./components/TypeSelector.vue";
 import ProductList from "./components/ProductList.vue";
 import Contacts from "./components/Contacts.vue";
+import Gallery from "./components/Gallery.vue";
 import DeliveryOptions from "./components/DeliveryOptions.vue";
 import SectionSelector from "./components/SectionSelector.vue";
 
@@ -47,6 +52,7 @@ export default {
     SectionSelector,
     Contacts,
     DeliveryOptions,
+    Gallery,
   },
   methods: {
     onTypeChanged: function(id) {

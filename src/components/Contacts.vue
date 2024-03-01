@@ -1,8 +1,10 @@
 <template>
   <footer class="contacts-footer">
     <div class="contacts">
-      <p class="contacts-header">Наши контакты:</p>
-      <br>
+      <div v-if="showHeader">
+        <p class="contacts-header">Наши контакты:</p>
+        <br>
+      </div>
       <table>
         <tbody>
           <tr v-for="(item, index) in this.contacts" :key="index">
@@ -18,7 +20,7 @@
 <script>
 export default {
   name: "contacts-footer",
-  props: ['contacts']
+  props: ['contacts', 'showHeader']
 };
 </script>
 
@@ -28,6 +30,10 @@ export default {
   background-color: white;
   border-radius: 5px;
   padding: 3em;
+}
+
+.contacts-footer table {
+  margin: 0 auto;
 }
 
 .contacts-header {

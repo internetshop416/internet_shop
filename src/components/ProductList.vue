@@ -91,7 +91,7 @@ h3 {
 
 img {
   max-width: 100%;
-  filter: drop-shadow(1px 1px 3px #a6a6a6);
+  /* filter: drop-shadow(1px 1px 3px #a6a6a6); */
 }
 
 /* ----- Product Section ----- */
@@ -123,8 +123,9 @@ img {
 
 .photo-main {
   border-radius: 6px 6px 0 0;
-  background-color: #9be010;
-  background: radial-gradient(#953b04, #614904);
+  /* background-color: #9be010; */
+  background-color: #f0e5eb;
+  /* background: radial-gradient(#fff8fe, #fff8fe); */
 
   .controls {
     display: flex;
@@ -142,7 +143,7 @@ img {
     left: 1.5em;
     top: 2em;
     max-width: 70%;
-    filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+    /* filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3)); */
   }
 }
 

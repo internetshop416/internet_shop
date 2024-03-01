@@ -5,9 +5,19 @@
       <p>{{ database.title.description }}</p>
     </header>
 
-    <type-selector :types="database.types" @typeChanged="onTypeChanged"></type-selector>
-    <product-list :products="database.products" :maximal="maximal" :currentType="currentType"></product-list>
-    <contacts :contacts="database.contacts"></contacts>
+    <section-selector @sectionChangedEvent="onSectionChanged"></section-selector>
+
+    <section v-show="currentSection === 'shop'">
+      <type-selector :types="database.types" @typeChanged="onTypeChanged"></type-selector>
+      <product-list :products="database.products" :maximal="maximal" :currentType="currentType"></product-list>
+      <contacts :contacts="database.contacts" :show-header="true"></contacts>
+    </section>
+    <section v-show="currentSection === 'contacts'">
+      <contacts :contacts="database.contacts" :show-header="false"></contacts>
+    </section>
+    <section v-show="currentSection === 'delivery'">
+      <delivery-options></delivery-options>
+    </section>
   </div>
 </template>
 
@@ -15,6 +25,8 @@
 import TypeSelector from "./components/TypeSelector.vue";
 import ProductList from "./components/ProductList.vue";
 import Contacts from "./components/Contacts.vue";
+import DeliveryOptions from "./components/DeliveryOptions.vue";
+import SectionSelector from "./components/SectionSelector.vue";
 
 import json from '../data/database_empty.json'
 
@@ -25,17 +37,24 @@ export default {
       maximal: 0,
       products: [],
       database: json,
-      currentType: 0
+      currentType: 0,
+      currentSection: "shop"
     };
   },
   components: {
     ProductList,
     TypeSelector,
+    SectionSelector,
     Contacts,
+    DeliveryOptions,
   },
   methods: {
     onTypeChanged: function(id) {
       this.currentType = id;
+    },
+
+    onSectionChanged: function(sectionName) {
+      this.currentSection = sectionName;
     }
   },
   mounted: function () {
@@ -51,7 +70,7 @@ export default {
 
 <style>
 body {
-  background-image: url("../public/images/test_bg.jpg");
+  background-image: url("../public/images/bg1.jpg");
   background-repeat: repeat-y repeat-x;
 }
 
@@ -79,12 +98,13 @@ h3 {
 
 img {
   max-width: 100%;
-  filter: drop-shadow(1px 1px 3px #a6a6a6);
+  /* filter: drop-shadow(1px 1px 3px #a6a6a6); */
 }
 
 .app-header {
   margin: 50px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .app-header {

@@ -67,7 +67,8 @@ export default {
   },
   created() {
     document.title = this.database.title.page_title;
-    fetch(process.env.NODE_ENV === 'development' ? '/database.json' : '/internet_shop/database.json')
+    //fetch(process.env.NODE_ENV === 'development' ? '/database.json' : '/internet_shop/database.json')
+    fetch('/database.json')
       .then(response => response.json())
       .then((data) => this.database = data);
   }

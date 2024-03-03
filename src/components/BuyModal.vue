@@ -13,8 +13,12 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>Описание:</td>
-                                <td>{{ product.description }}</td>
+                                <td>Заказ:</td>
+                                <td>{{ product.name }}</td>
+                            </tr>
+                            <tr>
+                                <td>Артикул:</td>
+                                <td>{{ product.id }}</td>
                             </tr>
                             <tr>
                                 <td>Цена:</td>
@@ -23,7 +27,7 @@
                             <tr>
                                 <td>Количество:</td>
                                 <td>
-                                    <input type="number" v-model="quantity" />
+                                    <input type="text" v-model="quantity" />
                                 </td>
                             </tr>
                             <tr>
@@ -95,6 +99,10 @@ export default {
     },
     methods: {
         close() {
+            let self = this;
+            setTimeout(() => {
+                self.readyToClose = false;
+            }, 550);
             this.$emit('close');
         },
 
@@ -107,6 +115,7 @@ export default {
                 address: this.address,
                 comment: this.comment
             };
+
             emailjs.init('29IJ0jY4u-_sIZ-Nb');
             emailjs.send('service_mp2brdj', 'template_vhyvgkb', templateParams)
                 .then(function (response) {
